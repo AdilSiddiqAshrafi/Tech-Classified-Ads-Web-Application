@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="yEVQg4CRKl9niaMHoWY5SomJniRdGH7TRsUtL3Ek">
+
+    <title>Juicie-Queen</title>
+
+    <!-- Scripts -->
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="yEVQg4CRKl9niaMHoWY5SomJniRdGH7TRsUtL3Ek">
+
+    <title>Model Detail</title>
+
+    <!-- Scripts -->
+    <script data-navigate-once src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script data-navigate-once src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script data-navigate-once src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+        </script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script data-navigate-once src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <style>
+        .offcanvas-body {
+            padding: 0px;
+        }
+
+        /* .sidebar {
+            height: 0;
+        } */
+    </style>
+</head>
+
+<body class="">
+    <div class=" d-flex">
+        <!-- Sidebar left section -->
+        <div id="side" class="w-25 bg-dark h-auto text-white">
+            <div class="">
+                <h4 class="text-uppercase uf pt-3 ps-2 pb-3">choose category</h4>
+            </div>
+            <div class="row sidebar pb-3">
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+
+            <div class="offcanvas-body">
+                <div id="side" class=" bg-dark h-auto text-white">
+                    <div class="">
+                        <h4 class="text-uppercase uf pt-3 ps-2 pb-3">choose category</h4>
+                    </div>
+                    <div class="row sidebar mb-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Right section -->
+        <div id="maincontent" class="w-75 h-100" style="background-color: #f5f5d5;">
+            <!-- navabr -->
+            <nav class="navbar nav-expand py-1" style="background-color: #ffcc00;">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div>
+                                <img src="ham.svg" id="hamburger" class="hamburger mt-4 ms-2" alt=""
+                                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                    aria-controls="offcanvasExample">
+                                <img class="mt-3" src="tech-text-logo-design-template_208459-original.jpg" alt=""
+                                    style="height: 50px;width: 150px;">
+                            </div>
+                            <a href="" class="nav-link navbar-brand"></a>
+
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-1 mb-3">
+                        <a href="contact.html" class="btn btn-primary rounded-3 px-2"
+                            style="background-color: #ff0095; border-color: #ff0095;">Contact Us</a>
+                        <div>
+                            <form action="" class="d-flex"></form>
+                            <input type="search" class="form-control search" name="search" id="search"
+                                placeholder="search">
+                            </form>
+                        </div>
+                        <button type="reset" id="reset"
+                            class="btn btn-danger rounded-3 px-2 border border-warning">Reset</button>
+
+                    </div>
+                </div>
+            </nav>
+            <!--  last section in right -->
+            <section class="m-3 d-flex flex-lg-row justify-content-between align-items-start">
+                <div>
+                    <p>
+                        <span class="fw-bold h4">All Latest Computer Tech Classified Ads</span>&nbsp;
+                        <span class="fw-bold h4" style="color: #ff0095;">All Cities </span><br>
+                        <a data-bs-toggle="modal" data-bs-target="#locationmodal"
+                            style="color: #ff0095; cursor: pointer;" class="text-decoration-none small">change city</a>
+                    </p>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                    <a href="" class="btn btn-primary btn-sm text-white p-1 post"
+                        style="background-color: #ff0095; border-color: #ff0095;">POST
+                        NOW</a>
+                    <button id="logout" class="btn-secondary btn-sm border rounded text-light lgout-btn">Logout</button>
+                </div>
+
+            </section>
+            <!-- last section in right section -->
+            <!-- parent container of sub-contianer -->
+            <div class="p-2 mt-1 p-container" id="p-container">
+            </div>
+        </div>
+    </div>
+
+    <!--loaction modal  -->
+    <div id="locationmodal" class="modal fade rounded-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-primary" id="locationModalLabel">Choose a Location</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <!-- Accordion inside modal body for choosing location -->
+                    <div class="accordion" id="locationaccordion">
+                        <!-- USA -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="datamodal">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">New Post</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form id="productForm" class="p-4 border rounded bg-light mt-3">
+                        <div class="mb-3 mt-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                            <label for="text" class="form-label">text:</label>
+                            <input type="text" class="form-control" id="text" placeholder="Enter text" name="name">
+                            <label for="desc1" class="form-label">Posted:</label>
+                            <input type="text" class="form-control" id="txt1" placeholder="Enter text1" name="text1">
+
+                            <label for="txt2" class="form-label">category:</label>
+                            <input class="form-control" list="datalist2" id="txt2" name="text2"
+                                placeholder="Select or enter text2">
+                            <datalist id="datalist2">
+                                <option value="Hardware">
+                                <option value="Storgae">
+                                <option value="Networking">
+                                <option value="Assembly">
+                                <option value="Cloud">
+                                <option value="Ai">
+                            </datalist>
+
+                            <label for="txt3" class="form-label">Type:</label>
+                            <input class="form-control" list="datalist3" id="txt3" name="text3"
+                                placeholder="Select or enter text3">
+                            <datalist id="datalist3">
+                                <option value="AI & Beyond">
+                                <option value="NextGen Networks">
+                                <option value="The Singularity Zone">
+                                <option value="FutureCode">
+                                <option value="Synthetic Interfaces">
+                                <option value="Quantum Modules">
+                                <option value="Neural System">
+                            </datalist>
+
+                            <label for="txt4" class="form-label">Location:</label>
+                            <input class="form-control" list="datalist4" id="txt4" name="text4"
+                                placeholder="Select or enter text4">
+                            <datalist id="datalist4">
+                                <option value="Berlin, Germany">
+                                <option value="Shenzhen, China">
+                                <option value="Singapore">
+                                <option value="Austin, Texas, USA">
+                                <option value="Seoul, South Korea">
+                                <option value="Dubai, UAE">
+                                <option value="Kuala Lumpur, Malaysia">
+                            </datalist>
+
+                            <label for="img" class="form-label">Select an Image</label>
+                            <input class="form-control" type="file" id="img" name="img" accept="image/*"
+                                onchange="showImage()">
+                            <div class="mt-2">
+                                <img id="preview" class="d-none w-25 src="" alt="">
+                            </div>
+                        </div>
+
+                        <button type="submit" id="data-submit" class="btn btn-primary rounded-3 px-2"
+                            style="background-color: #ff0095; border-color: #ff0095;">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script page1.js"></script>
+</body>
+
+</html>
